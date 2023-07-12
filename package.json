@@ -1,5 +1,5 @@
 {
-	"name": "insta-twitter-youtube-bot",
+	"name": "social-media-downloader-bot",
 	"version": "1.0.0",
 	"main": "./src/index.ts",
 	"author": "k.khamidov <khamidoff09@gmail.com>",
@@ -11,12 +11,6 @@
 		"lint": "eslint src",
 		"lint:fix": "eslint src --fix",
 		"format": "prettier --write ./src/*",
-
-		"process:start": "yarn build && npx pm2 start ecosystem.config.js",
-		"process:stop": "npx pm2 stop social-media-bot",
-		"process:delete": "npx pm2 delete social-media-bot",
-		"process:restart": "yarn build && npx pm2 restart social-media-bot",
-		"update": "git pull && yarn process:restart"
 	},
 	"dependencies": {
 		"@types/node": "^20.1.7",
